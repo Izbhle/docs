@@ -61,7 +61,7 @@ If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: [ISO_
 And set it permanently with this command:
 
 ```
-sudo gedit /etc/default/crda
+gksudo gedit /etc/default/crda
 ```
 
 Change the last line to read:
@@ -86,7 +86,7 @@ sudo modprobe iwlwifi 11n_disable=8
 Then, test to see if that helps. To make it permanent:
 
 ```
-sudo gedit /etc/modprobe.d/iwlwifi.conf
+gksudo gedit /etc/modprobe.d/iwlwifi.conf
 ```
 
 Then, add this line to the bottom (effective upon reboot):
@@ -108,7 +108,7 @@ If you have trouble with a Bluetooth headset and keeping a steady downlink speed
 Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
 
 ```
-sudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+gksudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 ```
 
 And change the file to read (effective upon reboot):
@@ -119,7 +119,7 @@ And change the file to read (effective upon reboot):
 If `tlp` is installed, take a look at the settings file found here for additional Wifi power saving being enabled:
 
 ```
-sudo gedit /etc/default/tlp
+gksudo gedit /etc/default/tlp
 ```
 
 ## Useful Programs
